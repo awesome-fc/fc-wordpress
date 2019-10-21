@@ -1,0 +1,7 @@
+.env
+.fun
+.pyc
+.Funfile.generated.dockerfile
+.funignore
+.env_example
+.gitignore

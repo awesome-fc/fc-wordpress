@@ -1,0 +1,1071 @@
+[
+	{
+		"name":"Add Meta Tags",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+	},
+
+	{
+		"name":"Advanced Sitemap Generator",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+	},
+
+  {
+    "name":"Akismet",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+    "name":"All In One SEO Pack",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+	{
+		"name":"All In One WP Security & Firewall",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+	},
+
+	{
+		"name":"Anti-spam",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+	},
+
+  {
+    "name":"Any Mobile Theme Switcher",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+
+	{
+		"name":"Batcache",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+	},
+	
+  {
+    "name":"BAW Manual Related Posts",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+
+	{
+		"name":"bbPress",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+	},
+
+  {
+    "name":"Better Delete Revision",
+    "compat":"No",
+    "reason":"DELETE with JOIN/etc",
+    "class":"incompatible"
+  },
+
+  {
+    "name":"Better Related Posts",
+    "compat":"No",
+    "reason":"FULLTEXT index",
+    "class":"incompatible"
+  },
+
+	{
+		"name":"Better WP Security",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+	},
+	
+	{
+		"name":"WP Bit.ly",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+	},
+	
+  {
+    "name":"Breadcrumb NavXT",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+    "name":"Broken Link Checker",
+    "compat":"Needs Patch",
+    "patch_url":"http://dogwood.skr.jp/wordpress/plugins/",
+    "reason":"MySQL function",
+    "class":"workaround"
+  },
+  
+  {
+    "name":"Browser Shots",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+  	"name":"BuddyPress",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"BuddyPress Courseware",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+    "name":"Camera slideshow",
+    "compat":"Needs Patch",
+    "patch_url":"http://dogwood.skr.jp/wordpress/plugins/",
+    "reason":"MySQL function",
+    "class":"workaround"
+  },
+  
+  {
+  	"name":"Cart66 Cloud :: Ecommerce with security",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"Cart66 Lite :: WordPress Ecommerce",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+    "name":"Category Order and Taxonomy Terms Order",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+  	"name":"CKEditor For WordPress",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"configure-login-timeout",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+    "name":"Contact Form 7",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+    "name":"Contact Form 7 reCAPTCHA extension",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+  	"name":"Control XML-RPC publishing",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"Count per Day",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+    "name":"Crayon Syntax Highlighter",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+  	"name":"Custom Post type and short code",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"Custom Content Shortcode",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"Custom Field List Widget",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"Custom Meta Widget",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"Custom sidebars",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+    "name":"DB Cache Reloaded Fix",
+    "compat":"Probably No",
+    "reason":"db.php conflict",
+    "class":"probable"
+  },
+
+  {
+    "name":"Debug Bar",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+    "name":"Debug Bar Console",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+    "name":"Debug Bar Extender",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+  	"name":"Disable XML-RPC",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"Download Button Shortcode",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"WordPress Download Manager",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+    "name":"Dynamic To Top",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+  	"name":"Easy Digital Downloads",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"Easy WP SMTP",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"EDD Hide Download",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"eShop",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"Facebook",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+    "name":"FeedWordPress",
+    "compat":"Needs patch",
+    "patch_url":"http://dogwood.skr.jp/wordpress/plugins/",
+    "reason":"MySQL specific function",
+    "class":"workaround"
+  },
+  
+  {
+  	"name":"FlexiCache",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+    "name":"Google Analyticator",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+  	"name":"Google Analytics for WordPress",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+    "name":"Google Analytics Popular Posts",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+    "name":"Google XML Sitemaps",
+    "compat":"Needs Patch",
+    "patch_url":"http://dogwood.skr.jp/wordpress/plugins/",
+    "reason":"MySQL function",
+    "class":"workaround"
+  },
+  
+  {
+    "name":"Hello Dolly",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+  	"name":"HTTP Digest Authentication",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+    "name":"HyperDB",
+    "compat":"Probably No",
+    "reason":"db.php conflict",
+    "class":"probable"
+  },
+  
+  {
+    "name":"Jetpack by WordPress.com",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+  	"name":"Jigoshop",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+    "name":"Ktai Style",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+    "name":"Limit Login Attempts",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+  	"name":"Login Only 1 Session",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"Mass Email To users",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"Mathjax Latex",
+  	"compat":"Checked",
+  	"class":"compatible"
+  },
+  
+  {
+  	"name":"Members",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"Members Category",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"MP6",
+  	"compat":"Checked",
+  	"class":"compatible"
+  },
+  
+  {
+  	"name":"Multisite Global Search",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"Multisite User Management",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"MW WP Form",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"My Content Management",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"Networks for WordPress",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+    "name":"NewStatPress",
+    "compat":"Needs Patch",
+    "patch_url":"http://dogwood.skr.jp/wordpress/plugins/",
+    "reason":"MySQL specific data",
+    "class":"workaround"
+  },
+	
+	{
+		"name":"NextGEN Gallery",
+		"compat":"Needs Patch",
+		"patch_url":"http://dogwood.skr.jp/wordpress/plugins/",
+		"reason":"MySQL specific function",
+		"class":"workaround"
+	},
+  
+  {
+  	"name":"StatCounter - Free Real Time Visitor Stats",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+    "name":"Optimize Database after Deleting Revisions",
+    "compat":"Probably No",
+    "reason":"MySQL function/MySQL specific table",
+    "class":"workaround"
+  },
+  
+  {
+  	"name":"Options Framework",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"OSE Firewall™ Security",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"Page Builder by SiteOrigin",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"PDF.js Viewer Shortcode",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"PHP Code Widget",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+    "name":"Polylang",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+  	"name":"Prevent XMLRPC",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"Qikmo Mobile Website Redirection",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+	{
+		"name":"Redirection",
+		"compat":"Checked",
+		"class":"compatible"
+	},
+	
+  {
+    "name":"Related Posts",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+    "name":"Revision Cleaner",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+  	"name":"Safer Cookies",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+    "name":"Search Everything",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+    "name":"Search Meter",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+  	"name":"Sell Downloads",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"Session Manager",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"Simple Session Support",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"Simple Tags",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"Smart Donations",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"Socializer!",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+    "name":"SQLite Integration",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+  	"name":"StatPress",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+    "name":"Synchi",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+  	"name":"SysInfo",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"System information",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+    "name":"Theme-Check",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+  	"name":"Theme My Login",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"Welcart e-Commerce",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"Wikiful Mediawiki Bridge",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"WooCommerce - excelling eCommerce",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+    "name":"Wordfence Security",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+  	"name":"WordPress Advanced Ticket System",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"WP Attachments",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+    "name":"WordPress Beta Tester",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+  	"name":"WP Campaign Manager",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"WordPress.com Custom CSS",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"WordPress.com Stats",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"WordPress Hit Counter",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+	{
+		"name":"WordPress Importer",
+		"compat":"Checked",
+		"class":"compatible"
+	},
+	
+	{
+		"name":"WordPress Login Redirect",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+	},
+	
+	{
+		"name":"WordPress Mobile Pack",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+	},
+	
+	{
+		"name":"WordPress MU Domain Mapping",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+	},
+	
+	{
+		"name":"WordPress MU Sitewide Tags Pages",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+	},
+	
+  {
+    "name":"Wordpress Popular Posts",
+    "compat":"Needs Patch",
+		"patch_url":"http://dogwood.skr.jp/wordpress/plugins/",
+		"reason":"MySQL specific query",
+    "class":"workaround"
+  },
+  
+  {
+    "name":"WordPress Related Posts",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+  	"name":"WordPress SEO by Yoast",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"WP Document Revisions",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"WP e-Commerce",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"WP Email Login",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+    "name":"WP Emmet",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+  	"name":"WP Custom Login",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"WP Frontpage News",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"WP iSell Photo",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"WP Mail SMTP",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"WP-Members",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"WP-Piwik",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"WPtap Mobile Detector",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"WP Mobile Edition",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"WP Mobile Theme Switcher",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"WP-Mobilizer",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+    "name":"WP Multibyte Patch",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+  	"name":"WP Online Store",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+    "name":"WP-PageNavi",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+    "name":"WP-PostRatings",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+
+	{
+		"name":"WP-PostViews",
+		"compat":"Checked",
+		"class":"compatible"
+	},
+	
+  {
+    "name":"WP-reCAPTCHA",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+  	"name":"WP Session Manager",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+    "name":"WP Social Bookmarking Light",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+  	"name":"WP-Statistics",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+    "name":"WP Super Cache",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+  	"name":"WP System Health",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+    "name":"WP Video Lightbox",
+    "compat":"Checked",
+    "class":"compatible"
+  },
+  
+  {
+  	"name":"wp-webservices",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"WP Document Revisions Simple Downloads",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"WP Marketplace - Complete Shopping Cart / eCommerce Solution",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"WordPress Multi Site Mobile Edition",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"WPQuery Shortcode",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"WP Social Stats",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+  	"name":"WPtouch Mobile Plugin",
+		"compat":"Checked",
+		"class":"compatible",
+		"informed":"Users' Information"
+  },
+  
+  {
+    "name":"Wysija Newsletters",
+    "compat":"Needs Patch",
+    "patch_url":"http://dogwood.skr.jp/wordpress/plugins/",
+    "reason":"MySQL function/table name",
+    "class":"workaround"
+  },
+  
+  {
+    "name":"W3 Total Cache",
+    "compat":"Probably No",
+    "reason":"db.php conflict",
+    "class":"probable"
+  },
+  
+	{
+		"name":"Yet Another Related Posts Plugin",
+  	"compat":"No",
+  	"reason":"FULLTEX index",
+  	"class":"incompatible"
+  }
+]

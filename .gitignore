@@ -1,0 +1,5 @@
+.env
+.pyc
+.Funfile.generated.dockerfile
+tmp
+database

@@ -1,0 +1,8 @@
+* Version 1.7 can't create wp-config.php when installing with WordPress 4.0
+
+	When install process notices that there's no wp-config.php, it tries to
+	create one from wp-config-sample.php. During that time, WordPress unsets
+	global $wpdb and calls require_wp_db() function.
+	That function newly instantiates wpdb class. SQLite Integration has no
+	way of intercepting that process.
+

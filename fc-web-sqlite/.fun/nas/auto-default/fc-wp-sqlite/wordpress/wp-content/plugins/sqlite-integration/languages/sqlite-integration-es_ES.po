@@ -1,0 +1,1404 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: sqlite-integration\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-06 01:39+0900\n"
+"PO-Revision-Date: 2014-05-07 20:49-0300\n"
+"Last-Translator: Pablo Laguna <laguna.sanchez@gmail.com>\n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: sqlite-integration.php:205 sqlite-integration.php:235
+msgid "SQLite Integration"
+msgstr "SQLite Integration"
+
+#: install.php:47
+msgid ""
+"<strong><em>Note that password</em></strong> carefully! It is a <em>random</"
+"em> password that was generated just for you."
+msgstr ""
+"<strong><em>Guarde esta contraseña</em></strong> con cuidado. Es una "
+"contraseña <em>aleatoria</em> que fue generada exclusivamente para usted."
+
+#: install.php:52
+msgid "Your chosen password."
+msgstr "Su contraseña seleccionada."
+
+#: install.php:63
+msgid "The password you chose during the install."
+msgstr "La contraseña que seleccionó durante la instalación."
+
+#: pdodb.class.php:127
+#, php-format
+msgid "WordPress database error %1$s for query %2$s made by %3$s"
+msgstr ""
+"Error %1$s en la base de datos de WordPress para la query %2$s hecha por %3$s"
+
+#: pdodb.class.php:129
+#, php-format
+msgid "WordPress database error %1$s for query %2$s"
+msgstr "Error %1$s en la base de datos de WordPress para la query %2$s"
+
+#: pdodb.class.php:185
+#, php-format
+msgid ""
+"<h1>Error establlishing a database connection</h1><p>We have been unable to "
+"connect to the specified database. <br />The error message received was %s"
+msgstr ""
+"<h1>Error estableciendo conexión con la base de datos</h1><p>No pudimos "
+"conectar con la base de datos especificada. <br />El mensaje de error "
+"recibido fue %s"
+
+#: pdoengine.class.php:291
+#, php-format
+msgid ""
+"<h1>Unknown query type</h1><p>Sorry, we cannot determine the type of query "
+"that is requested.</p><p>The query is %s</p>"
+msgstr ""
+"<h1>Tipo de query desconocido</h1><p>Disculpe, no pudimos determinar el tipo "
+"de query que es requerido.</p><p>La query es %s</p>"
+
+#: utility.php:294 utility.php:296 documentation.php:134
+msgid "Needs Patch"
+msgstr "Parche requerido"
+
+#: utility.php:300 documentation.php:136
+msgid "Probably No"
+msgstr "Probablemente no"
+
+#: utility.php:303
+msgid "Probably Yes"
+msgstr "Probablemente sí"
+
+#: utility.php:306 documentation.php:138
+msgid "No"
+msgstr "No"
+
+#: utility.php:310
+msgid "Checked*"
+msgstr "Revisado*"
+
+#: utility.php:312
+msgid "Checked"
+msgstr "Revisado"
+
+#: utility.php:316 utility.php:322
+msgid "Not Checked"
+msgstr "No revisado"
+
+#: utility.php:327
+msgid "Sitewide Active"
+msgstr "Activo en todo el sitio"
+
+#: utility.php:330
+msgid "Active"
+msgstr "Activo"
+
+#: utility.php:333
+msgid "Inactive"
+msgstr "Inactivo"
+
+#: utility.php:434 utility.php:444
+msgid " was created."
+msgstr "fue creado."
+
+#: utility.php:436 utility.php:446
+msgid " was not created."
+msgstr "no fue creado."
+
+#: utility.php:472
+#, php-format
+msgid "File %s was deleted."
+msgstr "El fichero %s fue eliminado."
+
+#: utility.php:474
+msgid "Error! File was not deleted."
+msgstr "Error. El fichero no fue eliminado."
+
+#: utility.php:534
+msgid "Welcome to SQLite Integration"
+msgstr "Bienvenido a SQLite Integration"
+
+#: utility.php:536
+msgid "Thank you for using SQLite Integration plugin!"
+msgstr "¡Gracias por utilizar el plugin SQLite Integration!"
+
+#: utility.php:539
+msgid ""
+"You read this message, which means you have succeeded in installing "
+"WordPress with this plugin SQLite Integration. Congratulations and enjoy "
+"your Blogging!"
+msgstr ""
+"Si lee este mensaje, significa que tuvo éxito al instalar WordPress con el "
+"plugin SQLite Integration. ¡Felicidades y disfrute publicando!"
+
+#: utility.php:542
+msgid ""
+"You don't have to set any special settings. In fact there are no other "
+"settings. You can write articles or pages and customize you WordPress in an "
+"ordinary way. You want to install your plugins? All right, go ahead. But "
+"some of them may be incompatible with this. Please read more information "
+"about this plugin and your SQLite database below."
+msgstr ""
+"No tiene que establecer ninguna configuración especial. De hecho no hay "
+"otras configuraciones. Puede escribir entradas o páginas y personalizar su "
+"WordPress con normalidad. ¿Desea instalar plugins? Sin problema, hágalo. "
+"Quizás algunos sean incompatibles. Por favor, lea más información de este "
+"plugin y su base de datos SQLite a continuación."
+
+#: utility.php:544
+msgid ""
+"Deactivation makes this documents and utilities disappear from the "
+"dashboard, but it doesn't affect the functionality of the SQLite "
+"Integration. when uninstalled, it will remove wp-content/uploads/patches "
+"directory (if exists) and wp-content/db.php file altogether."
+msgstr ""
+"La desactivación hará desaparecer de su tablero estos documentos y "
+"utilidades, pero no afectará al funcionamiento de SQLite Integration. Cuando "
+"desinstale, se eliminará el directorio wp-content/uploads/patches (si "
+"existe) y también el fichero wp-content/db.php."
+
+#: utility.php:547
+msgid "Title"
+msgstr "Título"
+
+#: utility.php:548
+msgid "Contents"
+msgstr "Contenidos"
+
+#: utility.php:552 utility.php:590 utility.php:867
+#: database_maintenance.php:453 documentation.php:30 documentation.php:38
+#: patch.php:296
+msgid "Documentation"
+msgstr "Documentación"
+
+#: utility.php:553
+msgid "You can read documentation about this plugin and plugin compatibility."
+msgstr ""
+"Puede leer documentación sobre este plugin y la compatibilidad de plugins."
+
+#: utility.php:556 utility.php:591 utility.php:868
+#: database_maintenance.php:454 documentation.php:31 patch.php:297
+msgid "System Info"
+msgstr "Información del sistema"
+
+#: utility.php:557
+msgid "You can see database and system information."
+msgstr "Puede ver información de la base de datos y del sistema."
+
+#: utility.php:560 utility.php:592 utility.php:869
+#: database_maintenance.php:455 documentation.php:32 patch.php:298
+msgid "Miscellaneous"
+msgstr "Herramientas"
+
+#: utility.php:561
+msgid ""
+"You can see the error log and edit db.php file (if necessary) and optimize "
+"your database."
+msgstr ""
+"Puede ver el registro de errores y editar el fichero db.php (si lo necesita) "
+"y optimizar su base de datos."
+
+#: utility.php:564 utility.php:593 utility.php:870
+#: database_maintenance.php:456 documentation.php:33 patch.php:299
+msgid "Patch Utility"
+msgstr "Parches"
+
+#: utility.php:565
+msgid "You can upload patch files and apply them to the incompatible plugins."
+msgstr "Puede subir subir parches y aplicarlos a los plugins incompatibles."
+
+#: utility.php:568 utility.php:594 utility.php:871
+#: database_maintenance.php:457 documentation.php:34 patch.php:300
+msgid "Maintenance"
+msgstr "Mantenimiento"
+
+#: utility.php:569
+msgid "You can check your database and fix it if needed."
+msgstr "Puede revisar su base de datos y repararla si lo necesita."
+
+#: utility.php:583 utility.php:585 utility.php:774 utility.php:776
+#: database_maintenance.php:446 database_maintenance.php:448
+#: documentation.php:23 documentation.php:25 patch.php:236 patch.php:238
+msgid "You are not allowed to access this page!"
+msgstr "No tiene permiso para acceder a esta página."
+
+#: utility.php:598
+msgid "System Information"
+msgstr "Información del sistema"
+
+#: utility.php:599
+msgid "PHP Informations"
+msgstr "Información PHP"
+
+#: utility.php:604 utility.php:640
+msgid "Items"
+msgstr "Elementos"
+
+#: utility.php:605
+msgid "Description"
+msgstr "Descripción"
+
+#: utility.php:610
+msgid "WordPress Version"
+msgstr "Versión de WordPress"
+
+#: utility.php:614
+msgid "PHP Version"
+msgstr "Versión de PHP"
+
+#: utility.php:618
+msgid "PDO Support"
+msgstr "Soporte de PDO"
+
+#: utility.php:622
+msgid "PDO Drivers"
+msgstr "Drivers de PDO"
+
+#: utility.php:626
+msgid "PDO Driver for SQLite 3.x"
+msgstr "Drivers de PDO para SQLite 3.x"
+
+#: utility.php:630
+msgid "SQLite Library Version"
+msgstr "Versión de la librería de SQLite"
+
+#: utility.php:636
+msgid "Your Database Status"
+msgstr "Estado de su base de datos"
+
+#: utility.php:641
+msgid "Status"
+msgstr "Estado"
+
+#: utility.php:647
+msgid "Database Size"
+msgstr "Tamaño de la base de datos"
+
+#: utility.php:651
+msgid "Page Size"
+msgstr "Tamaño de la página"
+
+#: utility.php:655
+msgid "Total Number of Pages"
+msgstr "Número total de páginas"
+
+#: utility.php:659
+msgid "Unused Page"
+msgstr "Páginas no usadas"
+
+#: utility.php:663
+msgid "Integrity Check"
+msgstr "Integridad"
+
+#: utility.php:667
+msgid "Encoding"
+msgstr "Codificación"
+
+#: utility.php:671
+msgid "Collations"
+msgstr "Clasificaciones"
+
+#: utility.php:683
+msgid "Compile Options"
+msgstr "Opciones de compilado"
+
+#: utility.php:697
+msgid "Database Tables and Indexes"
+msgstr "Tablas e indexados de la base de datos"
+
+#: utility.php:699
+msgid ""
+"Table names in brown are required by WordPress, and those in blue are "
+"created by some plugins. The table sqlite_sequence is not a WordPress table "
+"but a table required by SQLite to store the current autoincremented value of "
+"each table, which is displayed in the parenthesis after the table names. You "
+"can't manipulate the tables or indexes here. Please use SQLite utilities (e."
+"g. SQLiteManager)."
+msgstr ""
+"Los nombres de tabla en marrón son requeridos por WordPress, y los azules "
+"son creados por otros plugins. La tabla sqlite_sequence no es una tabla de "
+"WordPress pero es requerida por SQLite para almacenar el actual valor "
+"autoincrementado de cada tabla, el cual es indicado en el paréntesis después "
+"de los nombres de tabla. No puede manipular las tablas o indexados aquí. Por "
+"favor utilice utilidades SQLite (por ejemplo SQLiteManager)."
+
+#: utility.php:704
+msgid "Table Name"
+msgstr "Nombre de la tabla"
+
+#: utility.php:705
+msgid "System/User"
+msgstr "Sistema/usuario"
+
+#: utility.php:706
+msgid "Index ( Column )"
+msgstr "Indexado ( Columna )"
+
+#: utility.php:744
+msgid "Plugin Info"
+msgstr "Información del plugin"
+
+#: utility.php:746
+msgid "This table shows plugins you have installed and their compatibility."
+msgstr ""
+"Esta tabla muestra los plugins que tiene instalados y su compatibilidad."
+
+#: utility.php:751
+msgid "Installed Plugins"
+msgstr "Plugins instalados"
+
+#: utility.php:752
+msgid "Active/Inactive"
+msgstr "Activo/Inactivo"
+
+#: utility.php:753
+msgid "Compatible"
+msgstr "Compatible"
+
+#: utility.php:761
+msgid ""
+"\"Checked*\" with an asterisk is from the users' information. I didn't check "
+"myself yet. If you found any malfunctioning, please let me know."
+msgstr ""
+"\"Revisado*\" con un asterisco es desde la información de los usuarios. No "
+"ha sido revisado oficialmente aún. Si encuentra cualquier mal "
+"funcionamiento, por favor, repórtelo."
+
+#: utility.php:781
+msgid "Log cleared"
+msgstr "Registro limpiado"
+
+#: utility.php:784
+msgid "Log not cleared"
+msgstr "Registro no limpiado"
+
+#: utility.php:796
+msgid "db.php was saved"
+msgstr "db.php fue guardado"
+
+#: utility.php:799
+msgid "Error! db.php couldn't be saved"
+msgstr "Error: db.php no pudo ser guardado"
+
+#: utility.php:810
+#, php-format
+msgid ""
+"Optimization finished. Before optimization: %1$s, After optimization: %2$s."
+msgstr ""
+"Optimización finalizada. Antes de la optimización: %1$s, después: %2$s."
+
+#: utility.php:813
+msgid "Optimization failed"
+msgstr "Optimización fallida"
+
+#: utility.php:821
+msgid "Couldn't find your database file."
+msgstr "No se pudo encontrar su fichero de base de datos."
+
+#: utility.php:833
+msgid "Please select backup file(s)."
+msgstr "Por favor, seleccione el/los fichero(s) de respaldo."
+
+#: utility.php:842
+msgid "Error! Please remove file(s) manyally."
+msgstr "Error: Por favor elimine el/los fichero(s) manualmente."
+
+#: utility.php:853
+msgid "Please select backup file."
+msgstr "Por favor selecciones fichero de respaldo."
+
+#: utility.php:856
+msgid "Please select one file at a time."
+msgstr "Por favor selecciones un fichero cada vez."
+
+#: utility.php:875
+msgid "Database Optimization, Error Log, Init File"
+msgstr "Optimización de la base de datos, registro de errores, fichero inicial"
+
+#: utility.php:876
+msgid "Optimize You Database"
+msgstr "Optimice su base de datos"
+
+#: utility.php:878
+msgid ""
+"This button sends &quot;vacuum&quot; command to your SQLite database. That "
+"command reclaims space after data has been deleted."
+msgstr ""
+"Este botón envía el comando &quot;vacuum&quot; a tu base de datos SQLite. "
+"Este comando recupera el espacio que queda después de que se hayan eliminado "
+"datos."
+
+#: utility.php:886
+msgid "Optimize"
+msgstr "Optimizar"
+
+#: utility.php:886
+msgid ""
+"Are you sure to optimize your database?\\n\\nClick [Cancel] to stop, [OK] to "
+"continue."
+msgstr ""
+"¿Seguro que desea optimizar su base de datos?\\n\\nHaga clic en [Cancelar] "
+"para detener, o en [OK] para continuar."
+
+#: utility.php:889
+msgid "Create or Delete backup file(s)"
+msgstr "Crear o eliminar fichero(s) de respaldo"
+
+#: utility.php:891
+msgid ""
+"Click the backup button below if you want to create a current snapshot of "
+"your database file. The backup file is named &lsquo;DB_FILE_NAME.yyyymmdd."
+"zip&rsquo; if PHP zip extension is loaded or &lsquo;DB_FILE_NAME.yyyymmdd."
+"back&rsquo; if not loaded, and is put in the same directory that the "
+"database is in."
+msgstr ""
+"Haga clic en el siguiente botón si desea crear una imagen de su fichero de "
+"base de datos. El fichero de respaldo es nombrado &lsquo;"
+"NOMBRE_DE_LA_BASE_DE_DATOS.aaaammdd.zip&rsquo; si la extensión zip de PHP "
+"está cargada o &lsquo;NOMBRE_DE_LA_BASE_DE_DATOS.aaaammdd.back&rsquo; si no "
+"lo está, y es guardado en el mismo directorio en el que está la base de "
+"datos."
+
+#: utility.php:894
+msgid ""
+"If you want to delete the file(s), check the file name and click the Delete "
+"button. You can check multiple files."
+msgstr ""
+"Si desea eliminar el/los fichero(s), marque el nombre del fichero y haga "
+"clic en el botón Eliminar. Puede marcar múltiples ficheros."
+
+#: utility.php:897
+msgid ""
+"If you want to download a file, check the file name and click the Download "
+"button. Please check one file at a time."
+msgstr ""
+"Si desea descargar un fichero, márquelo y haga clic en el botón Descargar. "
+"Por favor, marque un sólo fichero a la vez."
+
+#: utility.php:908
+msgid "Delete/Download"
+msgstr "Eliminar/descargar"
+
+#: utility.php:909
+msgid "Backup Files"
+msgstr "Respaldar ficheros"
+
+#: utility.php:924
+msgid "Backup"
+msgstr "Respaldar"
+
+#: utility.php:924
+msgid ""
+"Are you sure to make a backup file?\\n\\nClick [Cancel] to stop, [OK] to "
+"continue."
+msgstr ""
+"¿Seguro que desea crear un fichero de respaldo?\\n\\nHaga clic en [Cancelar] "
+"para detener, o en [OK] para continuar."
+
+#: utility.php:925 patch.php:399
+msgid "Delete file"
+msgstr "Eliminar fichero"
+
+#: utility.php:925
+msgid ""
+"Are you sure to delete backup file(s)?\\n\\nClick [Cancel] to stop, [OK] to "
+"continue."
+msgstr ""
+"¿Seguro que desea eliminar el/los fichero(s) de respaldo?\\n\\nHaga clic en "
+"[Cancelar] para detener, o en [OK] para continuar."
+
+#: utility.php:926
+msgid "Download"
+msgstr "Descargar"
+
+#: utility.php:926
+msgid ""
+"Are you sure to download backup file?\\n\\nClick [Cancel] to stop, [OK] to "
+"continue."
+msgstr ""
+"¿Seguro \tque desea descargar el fichero de respaldo?\\n\\nHaga clic en "
+"[Cancelar] para detener, o en [OK] para continuar."
+
+#: utility.php:929
+msgid "SQLite Integration Error Log"
+msgstr "Registro de errores de SQLite Integration"
+
+#: utility.php:931
+msgid ""
+"This is the contents of SQLite Integration error log file(default: wp-"
+"content/database/debug.txt). If you want to clear this file, click the Clear "
+"Log button."
+msgstr ""
+"Esto es el contenido del fichero de registro de errores de SQLite "
+"Integration (predeterminado: wp-content/database/debug.txt). Si desea "
+"limpiar este fichero, haga clic en el botón Limpiar registro."
+
+#: utility.php:941
+msgid "No error messages are found"
+msgstr "No se han encontrado mensajes de error"
+
+#: utility.php:949
+msgid "Clear Log"
+msgstr "Limpiar registro"
+
+#: utility.php:949
+msgid ""
+"Are you sure to clear Log?\\n\\nClick [Cancel] to stop, [OK] to continue."
+msgstr ""
+"¿Seguro que desea limpiar el registro?\\n\\nHaga clic en [Cancelar] para "
+"detener, o en [OK] para continuar."
+
+#: utility.php:953
+msgid "Edit Initial File (wp-content/db.php)"
+msgstr "Editar fichero inicial (wp-content/db.php)"
+
+#: utility.php:955
+msgid ""
+"When you go &quot;Plugins &raquo; Edit Plugin&quot; page, you can edit "
+"plugin source file. But you can't see this file there because it is not in "
+"the plugin directory. If you need to edit this file, you can edit here. This "
+"settings may cause problems. <span class=\"alert\">If you don't understand "
+"well, please don't edit this file</span>."
+msgstr ""
+"Cuando usted va a la página &quot;Plugins &raquo; Editar&quot;, puede editar "
+"el código del fichero del plugin. Pero no puede ver este fichero porque no "
+"está en el directorio del plugin. Si necesita editar este fichero, puede "
+"hacerlo aquí. Estos ajustes pueden causar problemas. <span class=\"alert"
+"\">Si no está seguro, por favor absténgase de editar este fichero</span>."
+
+#: utility.php:965
+msgid "Save"
+msgstr "Guardar"
+
+#: utility.php:965
+msgid ""
+"Are you sure to save this file?\\n\\nClick [Cancel] to stop, [OK] to "
+"continue."
+msgstr ""
+"¿Seguro que desea guardar este fichero?\\n\\nHaga clic en [Cancelar] para "
+"detener, o en [OK] para continuar."
+
+#: utility.php:1049
+msgid "Update db.php"
+msgstr "Actualizar db.php"
+
+#: utility.php:1050
+msgid "Replace the old db.php with the new one."
+msgstr "Reemplaza el viejo db.php con el nuevo."
+
+#: utility.php:1056
+msgid "Update"
+msgstr "Actualizar"
+
+#: utility.php:1056
+msgid ""
+"Are you sure to update this file?\n"
+"\n"
+"Click [Cancel] to stop, [OK] to continue."
+msgstr ""
+"¿Seguro que desea actualizar este fichero?\\n\\nHaga clic en [Cancelar] para "
+"detener, o en [OK] para continuar."
+
+#: database_maintenance.php:344
+msgid "Can't create backup file."
+msgstr "No se puede crear el fichero de respaldo."
+
+#: database_maintenance.php:363
+msgid "Failed: "
+msgstr "Fallo:"
+
+#: database_maintenance.php:368 database_maintenance.php:561
+msgid "Your database is OK. You don't have to restore it."
+msgstr "Su base de datos está bien. No necesita restaurarla."
+
+#: database_maintenance.php:372
+msgid "Your database restoration is successfully finished!"
+msgstr "La restauración de su base de datos finalizó correctamente."
+
+#: database_maintenance.php:391
+msgid "Table name is not selected."
+msgstr "El nombre de la tabla no está seleccionado."
+
+#: database_maintenance.php:394
+msgid "There's no such table."
+msgstr "No existe dicha tabla."
+
+#: database_maintenance.php:461
+msgid "Database Maintenace"
+msgstr "Mantenimiento de la base de datos"
+
+#: database_maintenance.php:462
+msgid "Important Notice"
+msgstr "Aviso importante"
+
+#: database_maintenance.php:464
+msgid ""
+"When you installed WordPress 3.5.x with SQLite Integration and upgraded to "
+"3.6, your database might not function as expected."
+msgstr ""
+"Si instaló WordPress 3.5.x con SQLite Integration y actualizó a 3.6, su base "
+"de datos podría no funcionar como esperaba."
+
+#: database_maintenance.php:465
+msgid ""
+"This page provide you the database sanity check utility and the restore "
+"utility."
+msgstr ""
+"Esta página le provee la utilidad de revisión del estado de su base de datos "
+"y la utilidad de restauración."
+
+#: database_maintenance.php:468
+msgid ""
+"Click \"Sanity Check\" button first, and see if you need to fix database or "
+"not. If needed, click \"Fix Database\" button. Afterward you may go to "
+"Miscellaneous page and optimize database (this is not required)."
+msgstr ""
+"Haga clic en el botón \"Revisar estado\" primero, y vea si necesita reparar "
+"la base de datos o no. Si es necesario, haga clic en el botón \"Reparar base "
+"de datos\". Después de esto, puede ir a la página Herramientas y optimizar "
+"la base de datos (esto no es requerido)."
+
+#: database_maintenance.php:471
+msgid ""
+"Fix Database procedure will create a database backup file each time the "
+"button clicked. The backup file is named with \"maintenance-backup\", so you "
+"can remove it if you don't need it. Please go to Miscellaneous page and "
+"check if there is one."
+msgstr ""
+"Al reparar la base de datos se creará un fichero de respaldo que será "
+"llamado \"maintenance-backup\", luego usted puede eliminarlo si no lo "
+"necesita. Por favor, vaya a la página Herramientas y revíselo."
+
+#: database_maintenance.php:474
+msgid ""
+"If you installed WordPress 3.6 (not upgraded), you don't have to restore the "
+"database."
+msgstr ""
+"Si usted instaló WordPress 3.6 (no actualizó), no tiene que restaurar la "
+"base de datos."
+
+#: database_maintenance.php:483
+msgid "Sanity Check"
+msgstr "Revisar estado"
+
+#: database_maintenance.php:483
+msgid ""
+"Are you sure to check the database? This will take some time.\\n\\nClick "
+"[Cancel] to stop, [OK] to continue."
+msgstr ""
+"¿Seguro que desea revisar el estado de la base de datos? Esto llevará algún "
+"tiempo.\\n\\nHaga clic en [Cancelar] para detener, o en [OK] para continuar."
+
+#: database_maintenance.php:484
+msgid "Fix database"
+msgstr "Reparar base de datos"
+
+#: database_maintenance.php:484
+msgid ""
+"Are you sure to do fix the database? This will take some time.\\n\\nClick "
+"[Cancel] to stop, [OK] to continue."
+msgstr ""
+"¿Seguro que desea reparar la base de datos? Esto tomará algún tiempo.\\n"
+"\\nHaga clic en [Cancelar] para detener, o en [OK] para continuar."
+
+#: database_maintenance.php:488
+msgid "Columns Information"
+msgstr "Información de columnas"
+
+#: database_maintenance.php:490
+msgid ""
+"Select a table name and click \"Display Columns\" button, and you'll see the "
+"column property of that table. This information is for debug use."
+msgstr ""
+"Seleccione un nombre de tabla y haga clic en el botón \"Mostrar columnas\", "
+"y usted verá la columna de propiedades de esa tabla. Esta información es "
+"para uso de depuración."
+
+#: database_maintenance.php:501
+msgid "Table Name: "
+msgstr "Nombre de la tabla:"
+
+#: database_maintenance.php:507
+msgid "Display Columns"
+msgstr "Mostrar columnas"
+
+#: database_maintenance.php:507
+msgid ""
+"Display columns in the selected table.\\n\\nClick [Cancel] to stop, [OK] to "
+"continue."
+msgstr ""
+"Mostrar columnas en la tabla seleccionada.\\n\\nHaga clic en [Cancelar] para "
+"detener, o en [OK] para continuar."
+
+#: database_maintenance.php:517 database_maintenance.php:519
+#: database_maintenance.php:543 database_maintenance.php:545
+#: database_maintenance.php:571 database_maintenance.php:573 patch.php:243
+#: patch.php:245 patch.php:265 patch.php:267 patch.php:287 patch.php:289
+msgid "You are not allowed to do this operation!"
+msgstr "No tiene permitido hacer esta operación."
+
+#: database_maintenance.php:523 database_maintenance.php:533
+msgid "Results"
+msgstr "Resultados"
+
+#: database_maintenance.php:549 database_maintenance.php:560
+msgid "Checked Results"
+msgstr "Resultados de la revisión"
+
+#: database_maintenance.php:554
+msgid " needs restoring."
+msgstr " necesita restauración."
+
+#: database_maintenance.php:577
+#, php-format
+msgid "Columns In %s"
+msgstr "Columnas %s"
+
+#: database_maintenance.php:578
+msgid "Column"
+msgstr "Columna"
+
+#: database_maintenance.php:579
+msgid "Type"
+msgstr "Tipo"
+
+#: database_maintenance.php:580
+msgid "Null"
+msgstr "Nulo"
+
+#: database_maintenance.php:581
+msgid "Default"
+msgstr "Predeterminado"
+
+#: database_maintenance.php:598
+msgid "Columns Info"
+msgstr "Información de columnas"
+
+#: documentation.php:40
+msgid ""
+"This is a brief documentation about this plugin. For more details, see also "
+"the <a href=\"http://dogwood.skr.jp/wordpress/sqlite-integration/\">SQLite "
+"Integration page</a>."
+msgstr ""
+"Esta es una breve documentación sobre este plugin. Para más detalle, vea "
+"también la <a href=\"http://dogwood.skr.jp/wordpress/sqlite-integration/"
+"\">página de SQLite Integration</a>."
+
+#: documentation.php:43
+msgid ""
+"Please don't forget: WordPress DOES NOT OFFICIALLY SUPPORT any database "
+"other than MySQL. So if you ask about this plugin in the Forum, it's not "
+"unlikely that you won't get no answers at all."
+msgstr ""
+"Por favor, no olvide: WordPress NO SOPORTA OFICIALMENTE ninguna base de "
+"datos que no sea MySQL. Así que si usted pregunta acerca de este plugin en "
+"el Foro, probablemente no obtenga respuesta."
+
+#: documentation.php:46
+msgid "Features"
+msgstr "Características"
+
+#: documentation.php:48
+msgid ""
+"This plugin is a successor to <a href=\"http://wordpress.org/extend/plugins/"
+"pdo-for-wordpress/\">PDO for WordPress</a>, which enabled WordPress to use "
+"SQLite for its database. But PDO for WordPress doesn't seem to be maintained "
+"any more only to be outdated. SQLite Integration makes use of the basic "
+"ideas and framework of PDO for WordPress, adds some new features and updates "
+"it to be able to work with the newest version of WordPress(3.8.1)."
+msgstr ""
+"Este plugin es un sucesor de <a href=\"http://wordpress.org/extend/plugins/"
+"pdo-for-wordpress/\">PDO for WordPress</a>, el cual habilitaba WordPress "
+"para el uso de SQLite para su base de datos. Pero PDO for WordPress parece "
+"que no va a tener más mantenimiento. SQLite Integration hace uso de las "
+"ideas básicas y framework de PDO for WordPress, añade algunas "
+"características nuevas y lo actualiza para hacerlo trabajar con la versión "
+"más reciente de WordPress."
+
+#: documentation.php:51
+msgid ""
+"<a href=\"http://www.sqlite.org/\">SQLite Web Page</a> says &mdash; SQLite "
+"is a &quot;software library that implements selfcontained, serverless, zero-"
+"configuration, transactional SQL database engine&quot;. It is &quot;a good "
+"choice for small to medium size websites&quot;. It's small and portable, and "
+"you don't need any database server system."
+msgstr ""
+"<a href=\"http://www.sqlite.org/\">La página web de SQLite</a> dice: SQLite "
+"es una &quot;biblioteca de software que implementa el motor de bases de "
+"datos SQL autocontenido, sin servidor, de configuración cero y "
+"transaccional&quot;. Esto es &quot;una buena opción para sitios web pequeños "
+"y medianos&quot;. Es pequeño y potable, y no necesita ningún sistema de "
+"servidor de base de datos."
+
+#: documentation.php:54
+msgid ""
+"Unfortunately enough, WordPress only supports MySQL. Consequently it doesn't "
+"provide any APIs for SQLite. So if you want to create a website using "
+"WordPress without a database server, you've got to write a kind of wrapper "
+"program yourself to use SQLite. This is the way SQLite Integration goes."
+msgstr ""
+"Desgraciadamente, WordPress sólo soporta MySQL. En consecuencia no provee "
+"ninguna API para SQLite. Por lo que si busca crear un sitio web usando "
+"WordPress sin un servidor de base de datos, tiene que escribir una especie "
+"de programa envoltorio usted mismo para usar SQLite. Esto es los que SQLite "
+"Integration le ofrece."
+
+#: documentation.php:57
+msgid "SQLite Integration does the work as follows:"
+msgstr "SQLite Integration hace tareas como las siguientes:"
+
+#: documentation.php:60
+msgid "Intercepts SQL statement for MySQL from WordPress"
+msgstr "Intercepta enunciados SQL para MySQL de WordPress"
+
+#: documentation.php:61
+msgid "Rewrites it as SQLite can execute"
+msgstr "Los reescribe para que los pueda ejecutar SQLite"
+
+#: documentation.php:62
+msgid "Gives it to SQLite"
+msgstr "Se los da a SQLite"
+
+#: documentation.php:63
+msgid "Gets the results from SQLite"
+msgstr "Obtiene los resultados de SQLite"
+
+#: documentation.php:64
+msgid "Format the results as MySQL returns, if necessary"
+msgstr "Formatea los resultados como MySQL, si es necesario"
+
+#: documentation.php:65
+msgid "Gives back the results to WordPress"
+msgstr "Devuelve los resultados a WordPress"
+
+#: documentation.php:68
+msgid ""
+"WordPress doesn't know what has happened in the background and will be happy "
+"with it."
+msgstr ""
+"WordPress no sabe qué está pasando en la parte trasera y estará bien así."
+
+#: documentation.php:71
+msgid "Limitations"
+msgstr "Limitaciones"
+
+#: documentation.php:73
+msgid ""
+"SQLite Integration uses SQLite, so the limitations of SQLite is, as it is, "
+"those of SQLite Integration. MySQL is far from a simple SQL engine and has "
+"many extended features and functionalities. WordPress uses some of them. "
+"Among those are some SQLite doesn't implement. For those features that "
+"WordPress uses, I made them work with SQLite Integration. But for others "
+"that some plugins are using, SQLite Integration can't manipulate. So..."
+msgstr ""
+"SQLite Integration usa SQLite, por lo que las limitaciones de SQLite son a "
+"su vez las de SQLite Integration. MySQL está lejos de un motor SQL simple y "
+"tiene muchas características y funcionalidades extendidas, y WordPress usa "
+"alguna de ellas, es decir, SQLite no implementa algunas características que "
+"tiene MySQL y que WordPress usa. Algunas de estas características, SQLite "
+"las consigue hacer funcionar. Pero para otras que algunos plugins están "
+"usando, SQLite no puede conseguirlo. Así es que..."
+
+#: documentation.php:76
+msgid "There are some plugins that you can't use. No way around.<br />"
+msgstr "Hay algunos plugins que no podrás usar. No hay manera.<br />"
+
+#: documentation.php:77
+msgid ""
+"Some plugins can't be activated or work properly. See the &quot;Plugin "
+"Compatibility/Incompatibility&quot; section."
+msgstr ""
+"Algunos plugins no pueden ser activados o funcionar apropiadamente. Vea la "
+"sección &quot;Compatibilidad/incompatibilidad de plugins&quot;."
+
+#: documentation.php:78
+msgid ""
+"There are some plugins that you can't use without rewriting some codes in "
+"them.<br />"
+msgstr ""
+"Hay algunos plugins que no puede usar sin reescribir parte de su código.<br /"
+">"
+
+#: documentation.php:79
+#, php-format
+msgid ""
+"Some plugins do work fine if you rewrite MySQL functions. I made some patch "
+"files and <a href=\"%s?page=patch\">Patch Utility</a>. See also the <a href="
+"\"http://dogwood.skr.jp/wordpress/sqlite-integration/#plugin-compat\">SQLite "
+"Integration Page</a> for more details."
+msgstr ""
+"Algunos plugins funcionan bien si reescribe sus funciones MySQL. Hemos hecho "
+"algunos parches y una <a href=\"%s?page=patch\">Utilidad de Parches</a>. Vea "
+"también la <a href=\"http://dogwood.skr.jp/wordpress/sqlite-integration/"
+"#plugin-compat\">página de SQLite Integration</a> para más detalles."
+
+#: documentation.php:82
+msgid ""
+"And there may be other problems I overlooked. If you find malfunctionality, "
+"please let me know at the <a href=\"http://wordpress.org/support/plugin/"
+"sqlite-integration\">Support Forum</a>."
+msgstr ""
+"Y puede ser que haya otros problemas que hemos obviado. Si encuentra "
+"cualquier mal funcionamiento, por favor, comuníquelo en el <a href=\"http://"
+"wordpress.org/support/plugin/sqlite-integration\">Foro de Soporte</a>."
+
+#: documentation.php:84
+msgid "User Defined Functions"
+msgstr "Funciones definidas por el usuario"
+
+#: documentation.php:86
+msgid ""
+"SQLite Integration replaces some functions of MySQL with the user defined "
+"functions built in PHP PDO library. But some of the functions are "
+"meaningless in SQLite database: e.g. get_lock() or release_lock(). When "
+"SQLite Integration meets those functions, it does nothing but prevent the "
+"error."
+msgstr ""
+"SQLite Integration reemplaza algunas funciones de MySQL con las funciones "
+"definidas por el usuario construidas en la librería PHP PDO. Pero algunas de "
+"las funciones no tienen sentido en la base de datos SQLite: por ejemplo, "
+"get_lock() o release_lock(). Cuando SQLite Integration encuentra esas "
+"funciones, no hace nada pero evita el error."
+
+#: documentation.php:89
+msgid ""
+"If you want SQLite Integration to execute more functions, you can add the "
+"definition in the file sqlite-integration/functions.php (functions-5-2.php "
+"is for PHP 5.2 or lesser)."
+msgstr ""
+"Si desea que SQLite Integration ejecute más funciones, puede añadir la "
+"definición en el fichero sqlite-integration/functions.php (functions-5-2.php "
+"es para PHP 5.2 o menor)."
+
+#: documentation.php:92
+msgid "Database Administration and Maintenance"
+msgstr "Administración y mantenimiento de la base de datos"
+
+#: documentation.php:94
+msgid ""
+"SQLite Integration doesn't contain database maintenace functionality, "
+"because there are some other free or proprietary softwares that give you "
+"such functionalities. For example, these are among free softwares:"
+msgstr ""
+"SQLite Integration no contiene la funcionalidad de mantenimiento de la base "
+"de datos, porque hay software tanto libre como propietario que ofrecen este "
+"tipo de funcionalidades. Por ejemplo, estos son algunos ejemplos libres:"
+
+#: documentation.php:97
+msgid "my recommendation"
+msgstr "recomendado"
+
+#: documentation.php:98
+msgid "unfortunately seems not to maintained..."
+msgstr "desgraciadamente parece que ya no es mantenido..."
+
+#: documentation.php:101
+msgid ""
+"I'm not sure if future release may have some of the database maintenance "
+"functionality."
+msgstr ""
+"Quizás en futuras versiones se incorporen algunas funcionalidades de "
+"mantenimiento de la base de datos."
+
+#: documentation.php:107
+msgid "Plugin Compatibility/Incompatibility"
+msgstr "Compatibilidad/incompatibilidad de plugins"
+
+#: documentation.php:109
+msgid ""
+"WordPress without its plugins is a king without people. Of course, you need "
+"plugins, I know."
+msgstr ""
+"WordPress sin estos plugins es como un rey sin pueblo. Por supuesto, "
+"necesitas plugins, lo sé."
+
+#: documentation.php:112
+#, php-format
+msgid ""
+"This is the list of the problematic plugins (far from complete). You can see "
+"informations about your installed plugins in the <a href=\"%s?page=sys-info"
+"\">System Info</a> page. To see more details, please visit the <a href="
+"\"http://dogwood.skr.jp/wordpress/sqlite-integration\">Plugin Page</a>."
+msgstr ""
+"Esta es la lista de los plugins problemáticos (lejos de ser exhaustiva). "
+"Puede ver información sobre sus plugins instalados en la página <a href=\"%s?"
+"page=sys-info\">Información del sistema</a>. Para ver más detalles, por "
+"favor, visite la <a href=\"http://dogwood.skr.jp/wordpress/sqlite-integration"
+"\">página del plugin</a>."
+
+#: documentation.php:118
+msgid "Plugins Name"
+msgstr "Nombre de los plugins"
+
+#: documentation.php:119
+msgid "Compatibility"
+msgstr "Compatibilidad"
+
+#: documentation.php:120
+msgid "Reasons"
+msgstr "Razones"
+
+#: patch.php:67
+msgid "Patch command is not found"
+msgstr "El comando de parche o no fue encontrado"
+
+#: patch.php:70
+msgid "Patch command is not executable"
+msgstr "El comando de parche o no es ejecutable"
+
+#: patch.php:87
+msgid "Patch file name is invalid"
+msgstr "El nombre del fichero del parche no es válido"
+
+#: patch.php:91
+msgid "Patch file version does not match with that of your plugin."
+msgstr "La versión del fichero del parche no coincide con la del plugin."
+
+#: patch.php:100
+msgid "Error! Plugin directory is not accessible."
+msgstr "Error. El directorio del plugin no es accesible."
+
+#: patch.php:103
+msgid "is patched successfully."
+msgstr "fue parchado con éxito."
+
+#: patch.php:108
+#, php-format
+msgid "Error! Messages: %s"
+msgstr "Error. Mensajes: %s"
+
+#: patch.php:136
+#, php-format
+msgid "File %s is deleted."
+msgstr "El fichero %s está eliminado."
+
+#: patch.php:138
+#, php-format
+msgid "Error! File %s is not deleted."
+msgstr "Error. El fichero %s no fue eliminado."
+
+#: patch.php:142
+msgid "Error!: patches directory is not accessible."
+msgstr "Error. El directorio de parches no es accesible."
+
+#: patch.php:163
+msgid "Unable to create a patch directory."
+msgstr "No es posible crear un directorio de parches."
+
+#: patch.php:171
+msgid "Unable to create a .htaccess file."
+msgstr "No es posible crear un fichero .htaccess."
+
+#: patch.php:179
+msgid "Invalid operation."
+msgstr "Operación no válida."
+
+#: patch.php:185
+msgid "File is too large to upload."
+msgstr "El fichero es demasiado grande para subirlo."
+
+#: patch.php:189
+msgid "File upload is not complete."
+msgstr "La subida del fichero no está completada."
+
+#: patch.php:193
+msgid "File is not uploaded."
+msgstr "El fichero no está subido."
+
+#: patch.php:197
+msgid "Temporary directory is not writable."
+msgstr "El directorio temporal no se puede escribir."
+
+#: patch.php:201
+msgid "File cannot be written on the disk."
+msgstr "El fichero no puede ser escrito en el disco."
+
+#: patch.php:205
+msgid "Unknown error."
+msgstr "Error desconocido."
+
+#: patch.php:213
+msgid "File is successfully uploaded."
+msgstr "Fichero subido con éxito."
+
+#: patch.php:217
+msgid "File upload failed. Possible file upload attack."
+msgstr "La subida del fichero falló. Posible ataque a la subida."
+
+#: patch.php:222
+msgid "File is not selected"
+msgstr "El fichero no está seleccionado"
+
+#: patch.php:249 patch.php:271
+msgid "Please select patch file(s)"
+msgstr "Por favor, seleccione fichero(s) de parche"
+
+#: patch.php:258
+msgid "None of the patches is applied!"
+msgstr "Ninguno de los parches está aplicado."
+
+#: patch.php:280
+msgid "Error! Please remove files manually"
+msgstr "Error. Por favor, elimine los ficheros manualmente"
+
+#: patch.php:304
+msgid "Patch Files Upload and Apply"
+msgstr "Subida y aplicación de parches"
+
+#: patch.php:305
+msgid "What you can do in this page"
+msgstr "Qué puede hacer en esta página"
+
+#: patch.php:307
+msgid ""
+"I made patch files for some plugins that are incompatible with SQLite "
+"Integration and need rewriting. And I wrote in the <a href=\"http://dogwood."
+"skr.jp/wordpress/sqlite-integration\">Plugin Page</a> about how to apply a "
+"patch file to the plugin. But the command line interface sometimes "
+"embarrasses some people, especially newbies."
+msgstr ""
+"Hemos preparado parches para varios plugins que son incompatibles con SQLite "
+"Integration y necesitan reescritura. En la <a href=\"http://dogwood.skr.jp/"
+"wordpress/sqlite-integration\">página del plugin</a> encontrará "
+"documentación sobre cómo aplicar un parche a los plugin, aunque la interfaz "
+"de línea de comandos a veces desconcierta a algunas personas, especialmente "
+"novatas."
+
+#: patch.php:310
+msgid ""
+"In this page, you can upload patch files and apply them automatically. But "
+"there are some requirements."
+msgstr ""
+"En esta página puede subir parches y aplicarlos automáticamente. Pero hay "
+"algunos requisitos."
+
+#: patch.php:313
+msgid ""
+"Think before you leap. Is the plugin to which you are going to apply patch "
+"really necessary for your site? Did you search in the <a href=\"http://"
+"wordpress.org/extend/plugins/\">Plugin Directory</a> for the substitutes?"
+msgstr ""
+"Piense antes de actuar. ¿Es realmente necesario para su sitio el plugin al "
+"que va a aplicar el parche? ¿Ha buscado en el <a href=\"http://wordpress.org/"
+"extend/plugins/\">directorio de plugins</a> un sustituto?"
+
+#: patch.php:314
+msgid ""
+"Your PHP script has the permission to create a directory and write a file in "
+"it."
+msgstr ""
+"Su script PHP debe tener permisos para crear un directorio y escribir "
+"ficheros en él."
+
+#: patch.php:315
+msgid "Your PHP scripts can execute exec() function on the server."
+msgstr "Sus scripts PHP deben poder ejecutar la función exec() en el servidor."
+
+#: patch.php:316
+msgid ""
+"Your PHP script can execute &quot;patch&quot; shell command.(Script will "
+"check if it is executable or not.)"
+msgstr ""
+"Su script PHP debe poder ejecutar el comando shell &quot;patch&quot;. "
+"(Script revisará si es ejecutable o no.)"
+
+#: patch.php:319
+msgid ""
+"If uploading fails, it' very likely that application will fail. When you try "
+"uploading with FTP client, the patch files must be put into the directory wp-"
+"content/uploads/patches/. When constant UPLOADS is defined, script follows "
+"it."
+msgstr ""
+"Si la subida falla, es muy probable que la aplicación falle. Cuando trate de "
+"subir los parches con un cliente FTP, debe hacerlo al directorio wp-content/"
+"uploads/patches/. Cuando la constante UPLOADS está establecida, el script "
+"irá ahí."
+
+#: patch.php:322
+msgid ""
+"You can create your patch file yourself. When you create one, please test it "
+"on your local server first and check if it works fine without PHP error or "
+"notice ( set error_reporting(E_ALL) ). If you use this utility, name your "
+"patch file as follows:"
+msgstr ""
+"Puede crear sus propios parches. Cuando cree uno, por favor, compruébelo "
+"primero en su servidor local y revise si funciona bien sin errores PHP o "
+"avisos (establezca error_reporting(E_ALL). Si usa esta utilidad, asigne "
+"nombres a sus ficheros de parcheo como los siguientes:"
+
+#: patch.php:325
+msgid "Use the file name beginning with the plugin directory name."
+msgstr "Utilice el nombre de fichero nombre del directorio del plugin."
+
+#: patch.php:326
+msgid "Use the plugin version number after the directory name with underscore."
+msgstr ""
+"Ponga el número de la versión del plugin después del nombre del directorio."
+
+#: patch.php:327
+msgid "Use the suffix .patch."
+msgstr "Utilice el sufijo .patch."
+
+#: patch.php:328
+msgid "Use diff command options &quot;-Naur&quot;."
+msgstr "Utilice las opciones de comando diff &quot;-Naur&quot;."
+
+#: patch.php:331
+msgid ""
+"For example, the patch file for the plugin &quot;Debug Bar&quot; is &quot;"
+"debug-bar_0.8.patch&quot;. Script interprets &quot;debug-bar&quot; as the "
+"target directory and &quot;0.8&quot; as the target version. If the version "
+"number doesn't match with the target, script shows the error message and "
+"skip applying the patch file. And script will reject any other file name."
+msgstr ""
+"Por ejemplo, el parche para el plugin &quot;Debug Bar&quot; es &quot;debug-"
+"bar_0.8.patch&quot;. El script interpreta &quot;debug-bar&quot; como el "
+"nombre del directorio y &quot;0.8&quot; como la versión. Si la versión no "
+"coincide con la instalada, se mostrará un mensaje de error y no se aplicará "
+"el parche. El script rechazará cualquier otro nombre de fichero."
+
+#: patch.php:334
+msgid "How to install, patch and activate plugins"
+msgstr "Como instalar, parchear y activar plugins"
+
+#: patch.php:336
+msgid "Install the plugin (not yet activate it)"
+msgstr "Instale el plugin (no lo active aún)."
+
+#: patch.php:337
+msgid "Upload the patch file (if any) to the server and ppply it in this page"
+msgstr "Suba el parche al servidor y aplíquelo en esta página."
+
+#: patch.php:338
+msgid "Back to the installed plugin page and activate it"
+msgstr "Active el plugin"
+
+#: patch.php:340
+msgid "How to upgrade plugins"
+msgstr "Cómo actualizar plugins"
+
+#: patch.php:342
+msgid "When upgrading the plugin, it will be safer to follow next steps."
+msgstr "Cuando actualice el plugin, será más seguro seguir estos pasos:"
+
+#: patch.php:345
+msgid "Deactivate the plugin"
+msgstr "Desactive el plugin"
+
+#: patch.php:346
+msgid "Upgrade the plugin"
+msgstr "Actualice el plugin."
+
+#: patch.php:347
+msgid "Upload the patch file (if any) and apply it"
+msgstr "Suba el parche y aplíquelo."
+
+#: patch.php:348
+msgid "Reactivate the plugin"
+msgstr "Reactive el plugin"
+
+#: patch.php:350
+msgid ""
+"If there isn't a patch file to match with the newest version of the plugin, "
+"it won't work properly. Please wait for somebody to make one or rewrite the "
+"codes checking the patch file for the previous version (it's not so "
+"difficult a matter, I guess, for almost all the cases, you'll have only to "
+"replace the MySQL functions with the WordPress built-in functions)."
+msgstr ""
+"Si no hay un parche que coincida con la versión más reciente del plugin, no "
+"funcionará correctamente. Por favor, espere a que lo cree o reescriba los "
+"códigos revisando el parche de la versión anterior (no es algo complicado en "
+"la mayoría de los casos, sólo hay que sustituir las funciones MySQL con las "
+"funciones incorporadas en WordPress)."
+
+#: patch.php:351
+msgid "Upload and Apply"
+msgstr "Subir y aplicar"
+
+#: patch.php:355
+msgid "File Select"
+msgstr "Seleccione el fichero"
+
+#: patch.php:363
+msgid ""
+"Select file from your computer. If the file name is the same as existent "
+"file, this operation will override it. You can't upload the file whose size "
+"is over 500kB."
+msgstr ""
+"Seleccione el fichero en su equipo. Si el nombre del fichero es el mismo que "
+"alguno existente, esta operación lo sobreescribirá. No puede subir ficheros "
+"cuyo tamaño sobrepase 500KB."
+
+#: patch.php:365
+msgid "Upload"
+msgstr "Subir"
+
+#: patch.php:370
+msgid "Patch files uploaded"
+msgstr "Parches subidos"
+
+#: patch.php:377
+msgid ""
+"Select the file(s) you want to apply to the plugin(s) or you want to delete. "
+"You can select multiple files."
+msgstr ""
+"Seleccione los parches que desea aplicar o eliminar. Puede seleccionar "
+"varios."
+
+#: patch.php:381
+msgid "Apply/Hold"
+msgstr "Aplicar/detener"
+
+#: patch.php:382
+msgid "Patch files to apply"
+msgstr "Parches para aplicar"
+
+#: patch.php:398
+msgid "Apply patch"
+msgstr "Aplicar parches"
+
+#: patch.php:398
+msgid ""
+"Are you sure to apply patch files?\\n\\nClick [Cancel] to stop,[OK] to "
+"continue."
+msgstr ""
+"¿Seguro que desea aplicar los parches?\\n\\nHaga clic en [Cancelar] para "
+"detener, o en [OK] para continuar."
+
+#: patch.php:399
+msgid ""
+"Are you sure to delete patch files?\\n\\nClick [Cancel] to stop,[OK] to "
+"continue."
+msgstr ""
+"¿Seguro que desea eliminar los parches?\\n\\nHaga clic en [Cancelar] para "
+"detener, o en [OK] para continuar."
+
+#: patch.php:410
+msgid "Caution about your patch file(s)"
+msgstr "Advertencia sobre sus parches"
+
+#: patch.php:414
+msgid ""
+"If you don't know where it comes from or who created it, I strongly "
+"recommend that you should see and check the contents of the file. If a "
+"person who created it secretly inserted a malicious codes, it will be "
+"executed by the plugin and may damage your site or your server, for which "
+"damage I don't incur any liability. If you don't understand well, you'd "
+"better use the substitute plugins. Take your own risk, please."
+msgstr ""
+"Si no sabe de dónde provienen o quién los creó, recomendamos encarecidamente "
+"que revise los contenidos de los parches. Si la persona que los creó "
+"introdujo código malicioso, será ejecutado por el plugin y podrá dañar su "
+"sitio o su servidor, ante lo que no nos responsabilizamos. Si no tiene total "
+"certeza, utilice mejor un plugin sustituto."

@@ -1,0 +1,56 @@
+2015-03-18  KOJIMA Toshiyasu
+
+	* version 1.8.1 bugfix release.
+
+	* pdoengine.class.php: bugfix. database file existent chech doesn't
+	  work properly, which causes installation problem.
+
+2015-03-06  KOJIMA Toshiyasu
+
+	* version 1.8 release.
+
+	* readme.txt, readme-ja.txt: updated.
+
+	* query_create.class.php: fixed the index query regexp.
+
+	* query.class.php: added 'orderby_callback' method.
+	  This is a workaround for PHP 5.2.x compatibility issue.
+
+2015-03-05  KOJIMA Toshiyasu
+
+	* pdodb.class.php: removed the unnecessary require directive.
+
+	* pdoengin.class.php: revised install process algorithm.
+	  Database directory and file check was too late.
+	  Changed the database directory permission.
+
+2014-10-01  KOJIMA Toshiyasu
+
+	* pdoengine.class.php: revised pdoengine class constructor definition
+	  in order to reuse the PDO instance.
+
+	* pdodb.class.php, pdoengine.class.php: moved the foreign key check
+	  from PDODB class to PDOEngine class init() method.
+
+	* functions.php, functions-5-2.php: check if PDO instance is not null
+	  to avoid displaying Zend debugger/Xdebug messages. If null, constructor
+	  executes wp_die() function.
+
+	* query_create.class.php: changed the data type rewriting method.
+	  When a field name is the same as data type, e.g. "date" or "timestamp",
+	  add a single quote to the field name and avoid to be rewritten.
+	  This works only if the field name is on the top of the line, according
+	  to the rule of dbDelta() function.
+
+	  Added the new function to quote illegal field name, e.g. "default" or
+	  "values", for SQLite. This is for the plugins that use those names to
+	  create tables without errors.
+
+2014-09-05  KOJIMA Toshiyasu
+
+	* version 1.7 release.
+	* update readme.txt and readme-ja.txt.
+
+2014-08-29  KOJIMA Toshiyasu
+
+	* Added ChangeLog and BUGS files.

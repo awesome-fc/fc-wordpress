@@ -1,0 +1,368 @@
+/**
+ * This file is a part of SQLite Integration.
+ *
+ * @package SQLite Integration
+ * @author Kojima Toshiyasu
+ */
+@CHARSET "UTF-8";
+#sqlite-admin-wrap h2,
+#sqlite-admin-side-wrap h2 {
+  background: rgb(34, 34, 34);
+  color: rgb(255, 255, 255);
+	padding-left: 5px;
+}
+h3 {
+  clear: both;
+}
+.navigation {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  min-height: 20px;
+}
+.navi-menu {
+	margin-left: 0;
+}
+.menu-item {
+	font-size: 20px;
+	display: inline;
+  min-width: 150px;
+  height: 50px;
+  margin-left: 0;
+  margin-right: 10px;
+  padding: 5px;
+  border: .5px solit #000;
+  background: rgb(51, 51, 51);
+  color: (255, 255, 255);
+	line-height: 40px;
+}
+.menu-selected {
+  font-size: 20px;
+  display: inline;
+  min-width: 150px;
+  height: 50px;
+  margin-left: 0;
+  margin-right: 10px;
+  padding: 5px;
+  border: .5px solit #000;
+  background: rgb(46, 162, 204);
+  color: rgb(255, 255, 255);
+}
+.menu-item a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+#sqlite-admin-wrap {
+	color: #1d1d1d;
+  font-size: 11pt;
+  border: 1px solid #ddd;
+  background: rgb(255, 255, 255);
+  -webkit-border-bottom-right-radius: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -webkit-border-top-left-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  -moz-border-radius-topleft: 6px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  display: block;
+  float: left;
+  min-height: 100%;
+  position: relative;
+  width: 58%;
+  margin-top: 10px;
+  padding: 5px;
+  box-shadow: 5px 5px 5px #eee;
+  z-index: 1;
+}
+#wpbody-content > .single {
+	width: 95%;
+}
+#sqlite-admin-side-wrap {
+  color: #1d1d1d;
+  font-size: 11pt;
+  border: 1px solid #ddd;
+  background: rgb(255, 255, 255);
+/*   border-top: 0; */
+  -webkit-border-bottom-right-radius: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -webkit-border-top-left-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  -moz-border-radius-topleft: 6px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  display: block;
+  float: left;
+  min-height: 100%;
+  position: relative;
+  width: 35%;
+  margin-top: 10px;
+  padding: 5px 5px 5px 5px;
+  box-shadow: 5px 5px 5px #eee;
+  z-index: 1;
+}
+p {
+  text-indent: 15px;
+  line-height: 160%;
+	font-size: 11pt;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+li {
+  line-height: 130%;
+}
+table#sys-info{
+/*   width: 600px; */
+  width: 80%;
+}
+table#status {
+  width: 100%;
+}
+table#sqlite-table {
+/*   width: 700px; */
+  width: 100%;
+}
+th.tbl-name {
+  width: 25%;
+}
+th.tbl_owner {
+  width: 25%;
+}
+th.tbl_index {
+  width: 50%;
+}
+td.system {
+  color: rgb(153, 0, 0);
+}
+td.user {
+  color: rgb(0, 0, 255);
+}
+td.menu-title {
+  width: 95px;
+}
+table.statement {
+  width: 500px;
+}
+ul.in-body-list {
+  margin-left: 20px;
+}
+ol {
+  margin-left: 40px;
+}
+pre.code {
+	padding: 5px 5px 5px 5px;
+  margin-left: 15px;
+  margin-right: 10px;
+  background: #eee;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow: auto;
+}
+tr.incompatible {
+	background: rgb(251, 229, 221);
+}
+tr.workaround {
+  background: rgb(217, 232, 237);
+}
+tr.compatible {
+}
+th.active-plugins {
+  width: 20%;
+}
+th.compatible {
+  width: 30%;
+}
+input.button-primary {
+	display: block;
+	clear: both;
+  width: 100px;
+}
+.alt {
+  background: rgb(247, 254, 236);
+}
+.em {
+	font-weight: bold;
+	text-transform: capitalize;
+}
+table#patch-files .item,
+table#backup-files .item {
+  width: 150px;
+}
+.alert {
+  color: rgb(255, 0, 0);
+}
+div.alert {
+	display: block;
+	width: 95%;
+	text-align: center;
+	margin: 0 auto;
+  color: rgb(255, 0, 0);
+  text-transform: capitalize;
+}
+blockquote.caution {
+	display: block;
+  width: 95%;
+  border: 3px double rgb(0, 0, 0);
+  margin: 0 auto;
+  padding: 5px;
+}
+blockquote.caution > p {
+  margin: 5px;
+  padding: 0;
+}
+#errorlog,
+#dbfile {
+	width: 100%;
+}
+/*
+ * Media Query
+ */
+@media screen and (max-width: 600px) {
+  #sqlite-admin-wrap {
+    width: 95%;
+  }
+  #sqlite-admin-side-wrap {
+    width: 95%;
+  }
+  #sqlite-admin-wrap > table#sys-info{
+    width: 100%;
+  }
+  table#sys-info th.item {
+  	width: 50%
+  }
+  #sqlite-admin-wrap > table#status {
+    width: 100%;
+  }
+  table#status th {
+  	width: 50%;
+  }
+  table#sqlite-table {
+    width: 100%;
+  }
+  th.tbl-name {
+    width: 25%;
+  }
+  th.tbl_owner {
+    width: 25%;
+  }
+  th.tbl_index {
+    width: 50%;
+  }
+  #sqlite-admin-side-wrap table#plugins-info {
+    width: 100%;
+  }
+  th.installed-plugins {
+    width: 50%;
+  }
+  th.active-plugins {
+    width: 20%;
+  }
+  th.compatible {
+    width: 30%;
+  }
+  #sqlite-admin-side-wrap > table#plugins-table {
+  	width: 100%;
+  }
+  #sqlite-admin-side-wrap > table#plugins-table th.item {
+  	width: 30%;
+  }
+  #sqlite-admin-side-wrap > table#plugins-table th.compat {
+  	width: 20%;
+  }
+  #sqlite-admin-side-wrap > table#plugins-table th.reason {
+  	width: 50%;
+  }
+}
+@media screen and (max-width: 782px) {
+  #sqlite-admin-wrap {
+    width: 95%;
+  }
+  #sqlite-admin-side-wrap {
+    width: 95%;
+  }
+  table#plugins-info {
+    width: 480px;
+  }
+  table#sqlite-table {
+    width: 100%;
+  }
+  th.tbl-name {
+    width: 25%;
+  }
+  th.tbl_owner {
+    width: 25%;
+  }
+  th.tbl_index {
+    width: 50%;
+  }
+  #plugins-table {
+  	width: 500px;
+  }
+}
+@media screen and (max-width: 900px) {
+  #sqlite-admin-wrap {
+    width: 95%;
+  }
+  #sqlite-admin-side-wrap {
+    width: 95%;
+  }
+  table#plugins-info {
+    width: 480px;
+  }
+  table#sqlite-table {
+    width: 100%;
+  }
+  th.tbl-name {
+    width: 25%;
+  }
+  th.tbl_owner {
+    width: 25%;
+  }
+  th.tbl_index {
+    width: 50%;
+  }
+  #plugins-table {
+  	width: 500px;
+  }
+}
+@media screen and (max-width: 1169px) {
+	#sqlite-admin-wrap {
+		width: 95%;
+	}
+	#sqlite-admin-side-wrap {
+		width: 95%;
+	}
+  table#plugins-info {
+    width: 480px;
+  }
+  table#sys-info {
+  	width: 460px;
+  }
+  table#status {
+  	width: 460px;
+  }
+  table#sqlite-table {
+    width: 100%;
+  }
+  th.tbl-name {
+    width: 25%;
+  }
+  th.tbl_owner {
+    width: 25%;
+  }
+  th.tbl_index {
+    width: 50%;
+  }
+  #plugins-table {
+  	width: 500px;
+  }
+}

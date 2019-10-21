@@ -1,0 +1,42 @@
+/**
+ * This file is a part of SQLite Integration.
+ *
+ * @package SQLite Integration
+ * @author Kojima Toshiyasu
+ */
+@import url('./style.min.css');
+@CHARSET "UTF-8";
+#sqlite-admin-wrap h2,
+#sqlite-admin-side-wrap h2 {
+  background: #59524c;
+  color: rgb(255, 255, 255);
+	padding-left: 5px;
+}
+.menu-item {
+	font-size: 20px;
+	display: inline;
+  min-width: 150px;
+  height: 50px;
+  margin-left: 0;
+  margin-right: 10px;
+  padding: 5px;
+  border: .5px solit #000;
+  background: #59524c;
+  color: rgb(255, 255, 255);
+	line-height: 40px;
+}
+.menu-selected {
+  font-size: 20px;
+  display: inline;
+  min-width: 150px;
+  height: 50px;
+  margin-left: 0;
+  margin-right: 10px;
+  padding: 5px;
+  background: #c7a589;
+  color: rgb(255, 255, 255);
+}
+.menu-item a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
