@@ -3,7 +3,7 @@ use RingCentral\Psr7\Response;
 
 function handler($request, $context): Response
 {
-    $host = "hz.mofangdegisn.cn"; // change to your domain
+    $host = getenv("WEB_HOST");
     $root_dir = '/mnt/auto/wordpress'; // nas dir
     $uri = $request->getAttribute("requestURI");
     $uriArr = explode("?", $uri);

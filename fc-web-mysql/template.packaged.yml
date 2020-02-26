@@ -1,0 +1,248 @@
+ROSTemplateFormatVersion: '2015-09-01'
+Transform: 'Aliyun::Serverless-2018-04-03'
+Parameters:
+  DomainName:
+    Type: String
+    Description: custom domain name
+Resources:
+  fc-wp-mysql:
+    Type: 'Aliyun::Serverless::Service'
+    Properties:
+      Description: run wordpress on FC
+      NasConfig:
+        UserId: 10003
+        GroupId: 10003
+        MountPoints:
+          - ServerAddr:
+              'Fn::Join':
+                - ''
+                - - Ref: MountTarget
+                  - ':/'
+                  - fc-wp-mysql
+            MountDir: /mnt/auto
+      LogConfig:
+        Project: 
+          'Fn::GetAtt':
+            - fc-wp-demo
+            - Name
+        Logstore: 
+          'Fn::GetAtt':
+            - fc-wp-demomysql-log
+            - LogstoreName
+      VpcConfig:
+        VpcId:
+          Ref: Vpc
+        VSwitchIds:
+          - Ref: VSwitch
+        SecurityGroupId:
+          Ref: SecurityGroup
+    wp-func:
+      Type: 'Aliyun::Serverless::Function'
+      Properties:
+        Handler: index.handler
+        Runtime: php7.2
+        CodeUri: >-
+          oss://%bucket%/%templateName%/d02c47cb196c848d7274dd903b5c6ae0
+        Timeout: 300
+        MemorySize: 256
+        EnvironmentVariables:
+          PHP_INI_SCAN_DIR: /code/extension
+          WEB_HOST:
+            Ref: DomainName
+      Events:
+        httpTrigger:
+          Type: HTTP
+          Properties:
+            AuthType: ANONYMOUS
+            Methods:
+              - POST
+              - GET
+              - HEAD
+              - PUT
+              - DELETE
+  fc-wp-demo:
+    Type: 'Aliyun::Serverless::Log'
+    Properties:
+      Description: fc web log project
+    mysql-log:
+      Type: 'Aliyun::Serverless::Log::Logstore'
+      Properties:
+        TTL: 10
+        ShardCount: 1
+  fc-wordpress-domain:
+    Type: 'Aliyun::Serverless::CustomDomain'
+    Properties:
+      Protocol: HTTP
+      RouteConfig:
+        Routes:
+          /*:
+            ServiceName:
+              'Fn::GetAtt':
+                - fc-wp-mysql
+                - ServiceName
+            FunctionName:
+              'Fn::GetAtt':
+                - fc-wp-mysqlwp-func
+                - FunctionName
+      DomainName:
+        Ref: DomainName
+  fc-wp-mysql-NasCpInvoker:
+    Type: 'ALIYUN::FC::FunctionInvoker'
+    DependsOn: MountTarget
+    Properties:
+      FunctionName:
+        'Fn::GetAtt':
+          - NasNasCpFunc
+          - FunctionName
+      ServiceName:
+        'Fn::GetAtt':
+          - Nas
+          - ServiceName
+      Event:
+        'Fn::Join':
+          - ''
+          - - '{"dst": "/mnt/nas_dependencies/'
+            - fc-wp-mysql
+            - '", "bucket": "'
+            - %bucket%
+            - >-
+              ", "objectNames": ["%templateName%/b535fb5e4a539a9ec34552ce74811b2b"], "rosCurl":
+              "
+            - 'Fn::GetAtt':
+                - WaitConHandle
+                - CurlCli
+            - '"}'
+      Async: true
+      ExecuteVersion: 1
+  Vpc:
+    Type: 'ALIYUN::ECS::VPC'
+    Properties:
+      Description: used for FC Application Repository
+      CidrBlock: 10.0.0.0/8
+      VpcName:
+        Ref: 'ALIYUN::StackName'
+  SecurityGroup:
+    Type: 'ALIYUN::ECS::SecurityGroup'
+    Properties:
+      SecurityGroupName:
+        Ref: 'ALIYUN::StackName'
+      VpcId:
+        Ref: Vpc
+  VSwitch:
+    Type: 'ALIYUN::ECS::VSwitch'
+    Properties:
+      ZoneId:
+        'Fn::FindInMap':
+          - RegionMap
+          - Ref: 'ALIYUN::Region'
+          - ZoneId
+      VpcId:
+        Ref: Vpc
+      CidrBlock: 10.20.0.0/16
+  FileSystem:
+    Type: 'ALIYUN::NAS::FileSystem'
+    Properties:
+      StorageType: Performance
+      Description: used_for_fun
+      ProtocolType: NFS
+  MountTarget:
+    Type: 'ALIYUN::NAS::MountTarget'
+    Properties:
+      Status: Active
+      VpcId:
+        Ref: Vpc
+      NetworkType: Vpc
+      VSwitchId:
+        Ref: VSwitch
+      AccessGroupName: DEFAULT_VPC_GROUP_NAME
+      FileSystemId:
+        Ref: FileSystem
+  Nas:
+    Type: 'Aliyun::Serverless::Service'
+    Properties:
+      Description: download dependences from oss and upload to nas.
+      Policies:
+        - AliyunOssFullAccess
+      VpcConfig:
+        VpcId:
+          Ref: Vpc
+        VSwitchIds:
+          - Ref: VSwitch
+        SecurityGroupId:
+          Ref: SecurityGroup
+      NasConfig:
+        UserId: 10003
+        GroupId: 10003
+        MountPoints:
+          - ServerAddr:
+              'Fn::Join':
+                - ''
+                - - Ref: MountTarget
+                  - ':/'
+            MountDir: /mnt/nas_dependencies
+    NasCpFunc:
+      Type: 'Aliyun::Serverless::Function'
+      Properties:
+        Handler: index.cpFromOssToNasHandler
+        Runtime: nodejs8
+        CodeUri: >-
+          oss://%bucket%/%templateName%/55c420080e83c77496c036ba5bf92070
+        MemorySize: 3072
+        Timeout: 300
+  WaitCondition:
+    Type: 'ALIYUN::ROS::WaitCondition'
+    Properties:
+      Count: 1
+      Handle:
+        Ref: WaitConHandle
+      Timeout: 600
+    DependsOn: Nas
+  WaitConHandle:
+    Type: 'ALIYUN::ROS::WaitConditionHandle'
+    Properties:
+      Mode: Full
+      Count: -1
+Outputs:
+  URL:
+    Value:
+      'Fn::Sub': 'http://${DomainName}'
+  Data:
+    Value:
+      'Fn::GetAtt':
+        - WaitCondition
+        - Data
+
+Mappings:
+  RegionMap:
+    cn-shanghai:
+      ZoneId: cn-shanghai-e
+    cn-hangzhou:
+      ZoneId: cn-hangzhou-g
+    cn-qingdao:
+      ZoneId: cn-qingdao-c
+    cn-beijing:
+      ZoneId: cn-beijing-c
+    cn-zhangjiakou:
+      ZoneId: cn-zhangjiakou-b
+    cn-huhehaote:
+      ZoneId: cn-huhehaote-a
+    cn-shenzhen:
+      ZoneId: cn-shenzhen-d
+    cn-hongkong:
+      ZoneId: cn-hongkong-c
+    ap-southeast-1:
+      ZoneId: ap-southeast-1a
+    ap-southeast-2:
+      ZoneId: ap-southeast-2a
+    ap-southeast-5:
+      ZoneId: ap-southeast-5a
+    ap-northeast-1:
+      ZoneId: ap-northeast-1a
+    eu-central-a:
+      ZoneId: eu-central-a
+    us-west-1:
+      ZoneId: us-west-1a
+    us-east-1:
+      ZoneId: us-east-1a
+    ap-south-1:
+      ZoneId: ap-south-1a

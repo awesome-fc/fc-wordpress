@@ -1,5 +1,9 @@
 ROSTemplateFormatVersion: '2015-09-01'
 Transform: 'Aliyun::Serverless-2018-04-03'
+Parameters:
+  DomainName:
+    Type: String
+    Description: custom domain name
 Resources:
   fc-wp-mysql:
     Type: 'Aliyun::Serverless::Service'
@@ -9,6 +13,7 @@ Resources:
       LogConfig:
         Project: fc-wp-demo
         Logstore: mysql-log
+
     wp-func:
       Type: 'Aliyun::Serverless::Function'
       Properties:
@@ -19,6 +24,8 @@ Resources:
         MemorySize: 256
         EnvironmentVariables:
           PHP_INI_SCAN_DIR: '/code/extension'
+          WEB_HOST:
+            Ref: DomainName
       Events:
         httpTrigger:
           Type: HTTP
@@ -35,13 +42,15 @@ Resources:
       Properties:
         TTL: 10
         ShardCount: 1
+
   fc-wordpress-domain:
     Type: 'Aliyun::Serverless::CustomDomain'
     Properties:
-      DomainName: Auto
       Protocol: HTTP
       RouteConfig:
         Routes: 
           '/*':
             ServiceName: fc-wp-mysql
             FunctionName: wp-func
+      DomainName:
+        Ref: DomainName
