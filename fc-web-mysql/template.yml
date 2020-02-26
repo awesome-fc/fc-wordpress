@@ -34,9 +34,10 @@ Resources:
       Properties:
         TTL: 10
         ShardCount: 1
-  hz.mofangdegisn.cn:
+  my-domain:
     Type: 'Aliyun::Serverless::CustomDomain'
     Properties:
+      DomainName: Auto
       Protocol: HTTP
       RouteConfig:
         Routes: 
