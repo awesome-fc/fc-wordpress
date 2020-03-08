@@ -32,9 +32,11 @@
 
 [免费开通文件存储服务NAS](https://nas.console.aliyun.com/)， 按量付费
 
-有一个域名， 比如 abc.com， 并将域名 CNAME 解析到 函数计算(FC) 对应的 region
+**可选：** 有一个域名(国内的需要备案， 海外的不需要)， 比如 abc.com， 并将域名 CNAME 解析到 函数计算(FC) 对应的 region
 
 > 如您想在杭州的 region 部署 wordpres 网站， 则将 abc.com CNAME 解析到 12345.cn-hangzhou.fc.aliyuncs.com, 其中 12345 是您的 accountId
+> 
+> 如果没有域名也没有关系， fun 工具会给您生成一个临时域名
 
 
 ## 3.1	安装最新的 Fun 工具
@@ -67,6 +69,13 @@
 	> fun nas init: 初始化 NAS, 基于您的 .env 中的信息获取(已有满足条件的nas)或创建一个同region可用的nas
 	
 	> 如果你没有修改 templata.yml 中的配置 service名字， 那么则可以进入下一步； 如果有修改， 会在当前目录生成新的目录 .fun/nas/auto-default/{serviceName} (fun nas info 可以列出新的目录),  将默认目录下的 .fun/nas/auto-default/fc-wp-mysql/wordpress 的wordpress目录拷贝到 .fun/nas/auto-default/{serviceName} 下， 同时可以删除目录 .fun/nas/auto-default/fc-wp-mysql/wordpress
+	
+  **可选操作：** 如果您没有自己的域名，可以在这里首先执行一次 fun deploy， 命令行结果输出中会有一个可用的临时域名， 如下图中的 12720569-1986114430573743.test.functioncompute.com, 记录这个域名。
+
+    ```bash
+    fun deploy
+    ```
+    ![image](https://raw.githubusercontent.com/awesome-fc/fc-wordpress/master/png/op1.png)
  
       
 - 上传 wordpress 网站到 NAS
@@ -93,6 +102,13 @@
 	
 	> 如果你没有修改 templata.yml 中的配置 service名字， 那么则可以进入下一步； 如果有修改， 会在当前目录生成新的目录 .fun/nas/auto-default/{serviceName} (fun nas info 可以列出新的目录),  将默认目录下的 .fun/nas/auto-default/fc-wp-sqlite/wordpress 的wordpress目录拷贝到 .fun/nas/auto-default/{serviceName} 下， 同时可以删除目录 .fun/nas/auto-default/fc-wp-sqlite/wordpress
 	
+  **可选操作：** 如果您没有自己的域名，可以在这里首先执行一次 fun deploy， 命令行结果输出中会有一个可用的临时域名， 如下图中的 12720569-1986114430573743.test.functioncompute.com, 记录这个域名。
+
+    ```bash
+    fun deploy
+    ```
+    ![image](https://raw.githubusercontent.com/awesome-fc/fc-wordpress/master/png/op1.png)
+	
 - 本地完成安装过程， 初始化 sqlite3 数据库
 
   - 在目录 .fun/nas/auto-default/fc-wp-sqlite/wordpress 中输入命令：
@@ -102,11 +118,10 @@
 	```
  
   - 修改 host 文件，添加  `127.0.0.1	hz.mofangdegisn.cn`
-  
     > - linux/mac : vim /etc/hosts 
     > - windows7: C:\Windows\System32\drivers\etc
     
-    > 其中 hz.mofangdegisn.cn 是您预先准备的域名
+    > 其中 hz.mofangdegisn.cn 是您预先准备的域名或者 Fun 为生成的临时域名
     
   - 通过浏览器输入 hz.mofangdegisn.cn， 这个时候没有mysql数据库设置页面，完成 wordpress 安装过程
   
@@ -132,24 +147,19 @@
 
 本地调试OK 后，我们接下来将函数部署到云平台：
 
-修改 template.yml LogConfig 中的 Project, 任意取一个不会重复的名字即可， 然后执行 
+- 修改 index.php 中的 $host 中的值， $host 修改为之前步骤中生成的临时域名， 如本例中的 12720569-1986114430573743.test.functioncompute.com
 
-`fun deploy`
+  >  当然， 这里您也可以使用自己的域名， 修改 template.yml 中 DomainName: Auto ,  Auto 修改成您自己的域名，  index.php 中的 $host 中的值也为您自己的域名
 
-注意:  template.yml 注释的部分为自定义域名的配置, 如果想在 fun deploy 中完成这个部署工作:
+- 修改 template.yml LogConfig 中的 Project, 任意取一个不会重复的名字即可, 有两处地方需要更改
 
-- 先去域名解析, 比如在示例中, 将域名 hz.mofangdegisn.cn 解析到 123456.cn-hangzhou.fc.aliyuncs.com, 对应的域名、accountId 和 region 修改成自己的
+   ![image](https://raw.githubusercontent.com/awesome-fc/fc-wordpress/master/png/op2.png)
 
-- 去掉 template.yml 中的注释, 修改成自己的域名
+- 再次执行 fun deploy， 完成最终的部署
 
-- 执行 `fun deploy`
+2.  登录控制台 [https://fc.console.aliyun.com](https://fc.console.aliyun.com/)，可以看到service 和 函数已经创建成功， 并且 service 也已经正确配置。
 
-这个时候如果没有自定义域名， 直接通过浏览器访问访问http trigger 的url， 比如 `https://123456.cn-shenzhen.fc.aliyuncs.com/2016-08-15/proxy/fc-wp-sqlite/wp-func/` 会被强制下载. [原因](https://help.aliyun.com/knowledge_detail/56103.html#HTTP-Trigger-compulsory-header)
-
-
-登录控制台 [https://fc.console.aliyun.com](https://fc.console.aliyun.com)，可以看到service 和 函数已经创建成功， 并且 service 也已经正确配置。
-
-通过浏览器打开自己之前配置的域名， 比如本例中的 hz.mofangdegisn.cn
+3.  通过浏览器打开 Fun 临时生成的域名， 比如本例中的 12720569-1986114430573743.test.functioncompute.com
 
 - mysql 版本数据库， 可以直接跟传统的 wordpress 一样，直接进入安装过程
 
@@ -184,8 +194,8 @@ A: 用一个 timer trigger 的函数 keep warm
 
 A: 由 sqlite3 数据库性能决定， 这边有一些压测结果：
 
-![image](https://raw.githubusercontent.com/awesome-fc/fc-wordpress/master/pts2.png)
+![image](https://raw.githubusercontent.com/awesome-fc/fc-wordpress/master/png/pts2.png)
 
-![image](https://raw.githubusercontent.com/awesome-fc/fc-wordpress/master/pts1.png)
+![image](https://raw.githubusercontent.com/awesome-fc/fc-wordpress/master/png/pts1.png)
 
 每次压力增大时候， 都有些冷启动，时间慢点，但是支持从压测结果来看支持 50 QPS 是没有疑问的， 是足够支持一些中小网站的。

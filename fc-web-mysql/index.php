@@ -18,7 +18,7 @@ function handler($request, $context): Response
             $resp = $GLOBALS['fcPhpCgiProxy']->requestPhpCgi(
                     $request, $root_dir, "index.php",
                     ['HTTP_HOST' => $host, 'SERVER_NAME' => $host, 'SERVER_PORT' => '80'],
-                    ['debug_show_cgi_params' => true, 'readWriteTimeout' => 5000]
+                    ['debug_show_cgi_params' => true, 'readWriteTimeout' => 15000]
                 );
             return $resp;
 
@@ -27,7 +27,7 @@ function handler($request, $context): Response
             $resp = $GLOBALS['fcPhpCgiProxy']->requestPhpCgi(
                     $request, $root_dir, "index.php",
                     ['HTTP_HOST' => $host, 'SERVER_NAME' => $host, 'SERVER_PORT' => '80'],
-                    ['debug_show_cgi_params' => true, 'readWriteTimeout' => 5000]
+                    ['debug_show_cgi_params' => true, 'readWriteTimeout' => 15000]
                 );
             return $resp;
         } 
