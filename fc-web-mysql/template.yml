@@ -7,8 +7,8 @@ Resources:
       Description: 'run wordpress on FC'
       NasConfig: Auto
       LogConfig:
-        Project: 'hz-fc-wp'
-        Logstore: 'mysql-log'
+        Project: fc-wp-demo
+        Logstore: mysql-log
     wp-func:
       Type: 'Aliyun::Serverless::Function'
       Properties:
@@ -25,16 +25,17 @@ Resources:
           Properties:
             AuthType: ANONYMOUS
             Methods: ['POST', 'GET', 'HEAD', 'PUT', 'DELETE']
-  hz-fc-wp:
+
+  fc-wp-demo:
     Type: 'Aliyun::Serverless::Log'
     Properties:
-      Description: 'hangzhou fc web log project'
+      Description: 'fc web log project'
     mysql-log:
       Type: 'Aliyun::Serverless::Log::Logstore'
       Properties:
         TTL: 10
         ShardCount: 1
-  my-domain:
+  fc-wordpress-domain:
     Type: 'Aliyun::Serverless::CustomDomain'
     Properties:
       DomainName: Auto

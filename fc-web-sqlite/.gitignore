@@ -1,3 +1,4 @@
 .env
 .pyc
 .Funfile.generated.dockerfile
+fc-web-mysql/.fun/pakcage
