@@ -38,6 +38,16 @@ function handler($request, $context): Response
         $handle = fopen($filename, "r");
         $contents = fread($handle, filesize($filename));
         fclose($handle);
+        $pathinfo  = pathinfo($filename);
+        $extension = strtolower($pathinfo['extension']);
+        if (in_array($extension, array("eot", "otf", "fon", "font", "ttf", "ttc", "woff", "woff2"))){
+            $headers = [
+                'Content-Type' => 'font/'.$extension,
+                'Cache-Control' => "max-age=8640000",
+                'Accept-Ranges' => 'bytes',
+            ];
+            return new Response(200, $headers, $contents);
+        }
         $headers = [
             'Content-Type' => $GLOBALS['fcPhpCgiProxy']->getMimeType($filename),
             'Cache-Control' => "max-age=8640000",
